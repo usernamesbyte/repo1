@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<header id="header">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+            margin: 10px;
+            text-align: left;
+}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            background-color: rgb(30, 28, 153);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            padding: 10px 20px;  
+            display: block;
+            color: white;
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px) {
+             body {
+                font-size: 100%;
+                    }
+            }
+        </style>
+    <div id="home"></div>
+    <img id="header-img" src="https://live.staticflickr.com/65535/51238945631_d0b510176e_b.jpg" alt="vaultboy" width=20% height=20% style="margin-top:4%" />
+    <img id="header-logo" src="https://live.staticflickr.com/65535/51238945581_812dcd6701_b.jpg" alt="vaultboy" width=50% height=50% style="margin-top:2%" />
+    <nav id=nav-bar>
+        <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#info">Information</a></li>
+            <li><a class="nav-link" href="#video">Video</a></li>
+            <li><a class="nav-link" href="#email">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <body>
+            <p id="info">Welcome to Vault-Tec's G.E.C.K. product page, browse around to learn more about the Garden Of Eden Creation Kit.</p>
+        <p>Background
+            Developed by Stanislaus Braun, the kit contains the basic amenities needed to establish a post-nuclear settlement. Although advertised as a miracle solution for a land ravaged by nuclear warfare, the G.E.C.K. was based on a variety of assumptions about the post-nuclear world, as its creators had no real way to determine what challenges the survivors of the nuclear war would face.
+        </p>   
+            <div class="flex-container">    
+                <div>Characteristics</div>
+            
+            <div>Packed into a large, silvered briefcase emblazoned with the kit's abbreviation, the G.E.C.K. was intended to be standard equipment for all Vaults, as a fully self-contained terraforming module capable of creating and sustaining life in a post-War environment. Vault-Tec proudly declared that, "even in the event of total global annihilation, a properly functioning G.E.C.K. will create an earthly paradise." It's possible it could even fertilize pre-conditioned areas on the Moon.</div>
+            
+            <div>In reality, it was a more modest tool. The kit included seed and soil supplements, a fusion power generator (referred to as cold fusion in briefing materials), matter-energy replicators, atmospheric chemical stabilizers and water purifiers. The replicators were advertised as capable of creating food and basic items needed for building new environments.</div>
+            
+            <div>Reading material and information was included with the kit, including selections from the Library of Congress, a complete set of encyclopedias, and other information that would benefit those trying to survive. These included additional codes for the Vault's systems to allow for the manufacture of additional jumpsuit varieties, weatherproof gear, schematics for force fields, and instructions on creating adobe buildings from raw materials, manufacture chemicals to make sandcrete, and even disassemble parts of the Vault to utilize in the process of rebuilding civilization. The Kit itself was designed to be disassembled in the process of rebuilding, as a source of spare parts and energy (thanks to its fusion generator).</div>
+            
+            <div>If chosen to receive a G.E.C.K., a Vault would be issued two standard G.E.C.K.s as part of the standard inventory package. Some Vaults lacked the two issued G.E.C.K.s, such as Vault 8, of which the extra G.E.C.K. was swapped with Vault 13's surplus water chips.</div>
+            
+            <div>Vault 87 received an unique G.E.C.K., which was capable of collapsing matter within a given radius and recombining it to form "a living, breathing, fertile virgin landscape to begin anew."
+
+            </div>
+        <div>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/1SxRNua0TGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+        </div>
+        <p></p>
+        <p></p>
+        <p font=strong>
+		    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email" id=email-label>Enter Your Email For More Information</label><input required type="email" placeholder="email address" id="email" name="email">
+                <input id="submit" type="submit">
+            </form>
+        </p>
+    </body>
+</html>
