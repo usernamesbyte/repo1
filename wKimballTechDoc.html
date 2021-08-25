@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving</title>
+    <style>
+/* User Story #15: My Technical Documentation page should use at least one media query */
+        @media (max-width: 768px) {
+            main {
+            font-size: 50%;
+                }
+            }
+        h1 {
+            margin-left: 100px;
+        }
+        h2 {
+            margin-left: 100px;
+        }
+        p {
+            margin-left: 100px;
+        }
+        ol {
+            margin-left: 140px;
+        }
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 95px;
+            background-color: rgb(241, 54, 54);
+            height: 100%;
+            position: fixed; 
+            overflow: auto; 
+            }
+        header li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+            }
+        header a {
+            color:black;
+            }    
+    </style>
+</head>
+<!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains
+the page's main content (technical documentation).
+ -->
+<main id="main-doc">
+    <header>
+<!-- User Story #8: I can see a nav element with a corresponding id="navbar".
+  -->
+        <nav id=nav-bar>
+            <ul>
+<!--User Story #9: The navbar element should contain one header element which contains text that
+describes the topic of the technical documentation.  -->
+<!-- User Story #11: The header element in the navbar must come before any link (a) elements in
+the navbar -->
+                <header><a class="nav-link" href="#title">5 Step Problem-Solving</a></header>
+<!-- User Story #10: Additionally, the navbar should contain link (a) elements with the class of
+nav-link. There should be one for every element with the class main-section.
+ -->
+ <!-- User Story #12: Each element with the class of nav-link should contain text that corresponds to
+the header text within each section -->
+<!-- User Story #13: When I click on a navbar element, the page should navigate to the
+corresponding section of the main-doc element -->
+                <li><a class="nav-link" href="#identify_the_problem">Identify</a></li>
+                <li><a class="nav-link" href="#generate_potential_solutions">Generate solutions</a></li>
+                <li><a class="nav-link" href="#choose_one_solution">Choose solution</a></li>
+                <li><a class="nav-link" href="#implement_the_solution">Implement solution</a></li>
+                <li><a class="nav-link" href="#evaluate_results">Evaluate results</a></li>
+    </ul>
+</nav></header>
+<!-- User Story #2: Within the #main-doc element, I can see several section elements, each with a
+class of main-section. There should be a minimum of 5.
+ -->
+ <!-- User Story #3: The first element within each .main-section should be a header element which
+contains text that describes the topic of that section. -->
+<!-- User Story #4: Each section element with the class of main-section should also have an id that
+corresponds with the text of each header contained within it. Any spaces should be replaced
+with underscores -->
+<!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not
+each). -->
+    <content>
+        <div class="main-section"></div>
+        <div class="title" id="title">
+            <h1>5 Step Problem-Solving</h1>
+        </div>
+<!-- User Story #5: The .main-section elements should contain at least 10 p elements total -->
+            <h2 class="identify_the_problem" id="identify_the_problem">Identify the Problem
+            </h2>
+            <p>As obvious as it may sound, the <code>first step</code> in the problem-solving process is to identify the root of the issue. Unfortunately, the problem isn’t always easily identifiable and requires extra analysis to get the source. One method used in this step is Toyota’s “Five Whys” technique. In the event of a problem, ask yourself the five whys: Who, What, When, Why, and Where. By asking yourself these questions in associations with the problem, you will discover exactly where the problem is coming from. If that isn’t enough, there are three steps you can take to better identify a problem. </p>
+
+            <p class="bullet"><ol>
+<!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+-->
+                <li>Explore the situation: Expand on the problem to try to get to the bottom of it. If the source of the problem is coming from an individual, try putting yourself in their shoes<br>
+                </li><br>
+                <li>Draft a problem statement: Reduce the problem into the simplest of terms and put it on paper<br>
+                </li><br>
+                <li>Try to answer the question: “why is this current situation a problem?”- Once you’ve boiled it down to one source, you will then be able to better assess the situation better<br>
+                </li>   
+            </ol></p>
+        <div class="main-section"></div>
+            <h2 class="generate_potential_solutions" id="generate_potential_solutions">Generate potential solutions
+            </h2>
+            <p>The <code>second</code> step is to create a list of possible solutions to the problem you’ve discovered. There are many ways to generate solutions. Brainstorming is the first way to think of a potential answer. This can be done individually or in a group setting. The latter is recommended, because the more input, the better, simply because different perspectives can lead to different solutions. There are more models for this situation that can help you create solutions, including:</p>
+            <br>
+            <p class="bullet"><ol>
+                <li>Means-End Analysis– An artificial intelligence analysis that looks at the ultimate goal and finds the best possible way of attaining that goal<br>
+                </li><br>
+                <li>PDSA Model– Also known as the Plan Do Study Act Model. This is the shorthand version of the problem-solving method, where you start with planning, test the theory, study the results, and act based upon observations. This process is done several times<br>
+                </li><br>
+                <li>Root Cause Analysis–  This method is used to get to the root of the problem. There are four steps to find the root cause. Identify the problem, establish a timeline, distinguish between root causes and other factors, and create a cause graph<br>
+                </li><br>
+                <li>Lean Prioritization Method– This method is created within a two by two matrix with the X and Y-axis ranging from low to high. The X-axis is labeled as effort, while the Y-axis is labeled value. Inside the two by two matrix label the four squares with quick wins, big bets, maybes, and time sinks. Evaluate all of the problems and situations and put them in the appropriate categories to figure out where to focus your attention<br>
+                </li></ol></p>
+        <div class="main-section"></div>
+            <h2 class="choose_one_solution" id="choose_one_solution">Choose one solution
+            </h2>
+            <p>Once a list of possible solutions has been made, <code>the third</code> step to put your decision-making skills to the test. In order to find the best solution for the problem, analyze every possible resolution and decide which is best for the situation you are in. One might want to consider many elements before choosing one solution. These elements include efficacy, practicality, timeliness, resources, and cost. Also, consider who is involved before making any final decisions. The process of elimination is another good way to narrow your choices down. This is also where risk management will be used to help make a decision. Like brainstorming, choosing a solution doesn’t have to be done alone.
+            <br></p>
+        <div class="main-section"></div>
+            <h2 class="implement_the_solution" id="implement_the_solution">Implement the solution you’ve chosen
+            </h2>
+            <p>Now that a solution has been chosen, our <code>fourth step</code> to implement it throughout the necessary departments, areas, or people. On average, it takes about 66 days for a new habit to become automatic, according to a recent study that was published in the European Journal of Social Psychology. In other words, change doesn’t happen overnight. To make a new change to any business, planning, patience, and persistence are all required.<br></p>
+            <p class="bullet"><ol>
+                <li>Planning- Understand that timing is everything, and when a company implements a new strategy, they often take a lot of time to implement the new idea. Decide on clear goals, address any issues or possible obstacles, and create a plan. It’s also very important to practice proper communication skills across the entire organization so that everyone knows what is expected<br>
+                </li><br>
+                <li>Patience– Change is scary and not everyone is always acceptable to the idea, that’s why it’s important to stay patient throughout this process. Try implementing the plan little by little so that employees aren’t overwhelmed. Encourage each other and make sure everyone understands the goal behind this change, and that everyone is participating in making that change possible<br>
+                </li><br>
+                <li>Persistence– Finally, continuous application and monitorization of these changes are crucial. As an employer, you must make sure all of your employees are practicing the changes every week, so that old habits can fall behind. If an employee is being inconsistent, you might have another problem on your hands<br>
+                </li>
+            </ol></p>
+        <div class="main-section"></div>
+            <h2 class="evaluate_results" id="evaluate_results">Evaluate results
+            </h2>
+            <p>The <code>fifth</code> and final part of the problem-solving process is to analyze the results. This can be done after a couple of weeks, months, or years, depending on what you are trying to change or achieve. It’s important to remember why this problem started in the first place and how it was affecting the company. Ask yourself any of the following questions to better evaluate results:</p>
+            <p class="bullet"><ol>
+                <li>Are any of our processes being interrupted by the previous problem?<br>
+                </li><br>
+                <li>Are there any new problems to arise since this process has begun?<br>
+                </li><br>
+                <li>Is there a possibility the issue can return?<br>
+                </li><br>
+                <li>Is everyone aware of the original problem, the solution created, and why it was created?<br>
+                </li><br>
+                <li>Do you need to change any policy, procedure, or personnel to avoid this from happening again?<br>
+                </li>
+            </ol></p>
+            <p>Sometimes it is necessary to start the process completely over. To make the problem-solving process easier, it’s best to simplify the solution as much as possible. Try to focus on the solution rather than the problem. Finally, be in the correct mentality to want to change. This includes having the right mindset language, both are positive and open-minded. With enough practice, any problem can be solved.</p>   
+    </content>
+</main>
+</html>
